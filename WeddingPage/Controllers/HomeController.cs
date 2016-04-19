@@ -26,5 +26,12 @@ namespace WeddingPage.Controllers
 
             return View();
         }
+
+        public ActionResult RSVP()
+        {
+            ViewBag.Message = "Our RSVP Page.";
+
+            return View();
+        }
     }
 }
