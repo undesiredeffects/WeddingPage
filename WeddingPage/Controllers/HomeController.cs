@@ -13,23 +13,16 @@ namespace WeddingPage.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult RSVP()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Photos()
         {
             ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
-        public ActionResult RSVP()
-        {
-            ViewBag.Message = "Our RSVP Page.";
 
             return View();
         }
