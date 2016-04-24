@@ -26,5 +26,7 @@ namespace WeddingPage.Controllers
 
             return View();
         }
+
+
     }
 }

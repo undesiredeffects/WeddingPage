@@ -1,15 +1,33 @@
+﻿
+@model WeddingPage.Models.RSVP1
 ﻿@{
     ViewBag.Title = "RSVP";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<address>
-    7102 Arrowwood Rd<br />
-    Louisville, KY 40222<br />
-    <abbr title="Phone">P:</abbr>
-    555.555.5555
-</address>
+<div class="jumbotron">
+    <h1>RSVP for our wedding!</h1>
+    <p class="lead">Please let us know if you can make it by filling out the information below!</p>
+</div>
+
+@using (Html.BeginForm())
+{
+    <p>Name: </p><br />
+    @Html.TextBoxFor(c => c.Name)<br />
+    <p>Email: </p><br />
+    @Html.TextBoxFor(c => c.Email)<br />
+    <p>Phone: </p><br />
+    @Html.TextBoxFor(c => c.Phone)<br />
+    <p>Are you coming?</p><br />
+    @Html.DropDownListFor(c => c.Attend, new[] {new SelectListItem()
+{
+    Text = "Yes",Value = bool.TrueString },new SelectListItem()
+    {
+        Text="No", Value = bool.FalseString
+    }}, "Choose Please") <br /><br />
+    <input type="submit" value="Submit RSVP" />
+}
 
 <address>
     <strong>Email:</strong>   <a href="mailto:cejone08@lousiville.edu">cejone08@lousiville.edu</a><br />
