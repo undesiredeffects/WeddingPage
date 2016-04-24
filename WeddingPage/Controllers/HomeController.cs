@@ -22,9 +22,20 @@ namespace WeddingPage.Controllers
 
         public ActionResult Photos()
         {
+            ViewBag.Message = "Your photos page.";
+
+            return View();
+        }
+        public ActionResult ContactUs()
+        {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
+        public ActionResult Registry()
+        {
+            return View();
+        }
+
     }
 }
