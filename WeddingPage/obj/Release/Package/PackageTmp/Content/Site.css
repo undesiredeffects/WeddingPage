@@ -22,3 +22,24 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+h1 {
+	color: #ff3333;
+	text-align: center;
+	font-family: "Brush Script MT", cursive;
+	font-size: 60px;
+	font-weight: lighter;	
+}
+
+h2 {
+	color: black;
+	text-align: center;
+	padding-left: 20px;
+	font-family: "Brush Script MT", cursive;
+}
+p {
+	color: black;
+	text-align: center;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}

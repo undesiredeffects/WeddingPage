@@ -3,8 +3,7 @@
 ﻿@{
     ViewBag.Title = "RSVP";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+
 
 <div class="jumbotron">
     <h1>RSVP for our wedding!</h1>
@@ -12,23 +11,21 @@
 </div>
 
 @using (Html.BeginForm())
-{
-    <p>Name: </p><br />
-    @Html.TextBoxFor(c => c.Name)<br />
-    <p>Email: </p><br />
-    @Html.TextBoxFor(c => c.Email)<br />
-    <p>Phone: </p><br />
-    @Html.TextBoxFor(c => c.Phone)<br />
-    <p>Are you coming?</p><br />
-    @Html.DropDownListFor(c => c.Attend, new[] {new SelectListItem()
+{<center>
+        <p>Name: </p>
+        @Html.TextBoxFor(c => c.Name)<br /><br />
+        <p>Email: </p>
+        @Html.TextBoxFor(c => c.Email)<br /><br />
+        <p>Phone: </p>
+        @Html.TextBoxFor(c => c.Phone)<br /><br />
+        <p>Are you coming?</p>
+        @Html.DropDownListFor(c => c.Attend, new[] {new SelectListItem()
 {
     Text = "Yes",Value = bool.TrueString },new SelectListItem()
     {
         Text="No", Value = bool.FalseString
     }}, "Choose Please") <br /><br />
-    <input type="submit" value="Submit RSVP" />
+        <input type="submit" value="Submit RSVP" />
+    </center>
 }
 
-<address>
-    <strong>Email:</strong>   <a href="mailto:cejone08@lousiville.edu">cejone08@lousiville.edu</a><br />
-</address>
